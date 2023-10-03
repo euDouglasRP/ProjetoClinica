@@ -186,6 +186,7 @@ public class AnimalCadastro extends javax.swing.JFrame {
 
     private void jButtonCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarActionPerformed
         cadastrarAnimal();
+        limparCampos();
     }//GEN-LAST:event_jButtonCadastrarActionPerformed
 
     public void limparCampos(){

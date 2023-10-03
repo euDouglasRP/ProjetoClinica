@@ -231,6 +231,7 @@ public class MedicoEditar extends javax.swing.JFrame {
 
     private void jButtonEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarActionPerformed
         editarMedico();
+        limparCampos();
     }//GEN-LAST:event_jButtonEditarActionPerformed
 
     private void jButtonPesquisarCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPesquisarCodigoActionPerformed

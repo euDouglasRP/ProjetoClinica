@@ -102,6 +102,7 @@ public class MedicoExcluir extends javax.swing.JFrame {
 
     private void jButtonExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExcluirActionPerformed
         excluiMedico();
+        limparCampos();
     }//GEN-LAST:event_jButtonExcluirActionPerformed
 
     private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed

@@ -98,17 +98,26 @@ public class ProntuarioDeSaidaExcluir extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExcluirActionPerformed
+        excluir();
+        limparCampos();
+    }//GEN-LAST:event_jButtonExcluirActionPerformed
+
+    private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
+        limparCampos();
+    }//GEN-LAST:event_jButtonLimparActionPerformed
+
+    
+    public void excluir(){
         try {
              ProntuarioDeSaidaController prtController = new ProntuarioDeSaidaController();
              prtController.excluirProntuarioDeSaida(Integer.parseInt(jTextFieldID.getText()));
         } catch (Exception e) {
         }
-    }//GEN-LAST:event_jButtonExcluirActionPerformed
-
-    private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
+    }
+    
+    public void limparCampos(){
         jTextFieldID.setText("");
-    }//GEN-LAST:event_jButtonLimparActionPerformed
-
+    }
     /**
      * @param args the command line arguments
      */

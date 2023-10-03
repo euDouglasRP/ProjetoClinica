@@ -121,19 +121,29 @@ public class ProntuarioDeSaidaCadastro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarActionPerformed
-        try {
-            ProntuarioDeSaidaController prtController = new ProntuarioDeSaidaController();
-            prtController.cadastrarProntuarioDeSaida(Integer.parseInt(jTextFieldIDProntuarioDeEntrada.getText()), jTextAreaDescricao.getText(), jTextData.getText());
-        } catch (Exception e) {
-        }
+       cadastrar();
+       limparCampos();
     }//GEN-LAST:event_jButtonCadastrarActionPerformed
 
     private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
+        limparCampos();
+    }//GEN-LAST:event_jButtonLimparActionPerformed
+
+    
+    public void limparCampos(){
         jTextData.setText("");
         jTextFieldIDProntuarioDeEntrada.setText("");
         jTextAreaDescricao.setText("");
-    }//GEN-LAST:event_jButtonLimparActionPerformed
-
+    }
+    
+    public void cadastrar(){
+         try {
+            ProntuarioDeSaidaController prtController = new ProntuarioDeSaidaController();
+            prtController.cadastrarProntuarioDeSaida(Integer.parseInt(jTextFieldIDProntuarioDeEntrada.getText()), jTextAreaDescricao.getText(), jTextData.getText());
+            
+        } catch (Exception e) {
+        }
+    }
     /**
      * @param args the command line arguments
      */

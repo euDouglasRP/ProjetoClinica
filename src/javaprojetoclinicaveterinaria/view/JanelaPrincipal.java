@@ -322,7 +322,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private void jButtonProntuarioDeEntradaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonProntuarioDeEntradaActionPerformed
         try {
             jLabelIdentificarDeTabela.setText("Prontuario de Entrada");
-            jLabelIdentificarDeTabela.setIcon(new ImageIcon(""));
+            jLabelIdentificarDeTabela.setIcon(new ImageIcon("C:\\Users\\182210135\\Downloads\\ProjetoClinica-main\\ProjetoClinica-main\\ProjetoClinica-main\\src\\javaprojetoclinicaveterinaria\\image\\prontuarioImage.png"));
             atualizatabelaProntuariodeEntrada();
         } catch (Exception e) {
         }
@@ -416,7 +416,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private void jButtonProntuarioDeSaidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonProntuarioDeSaidaActionPerformed
         try {
             jLabelIdentificarDeTabela.setText("Prontuario de Saida");
-            jLabelIdentificarDeTabela.setIcon(new ImageIcon(""));
+            jLabelIdentificarDeTabela.setIcon(new ImageIcon("C:\\Users\\182210135\\Downloads\\ProjetoClinica-main\\ProjetoClinica-main\\ProjetoClinica-main\\src\\javaprojetoclinicaveterinaria\\image\\prontuarioImage.png"));
             atualizatabelaProntuariodeSaida();
         } catch (Exception e) {
         }

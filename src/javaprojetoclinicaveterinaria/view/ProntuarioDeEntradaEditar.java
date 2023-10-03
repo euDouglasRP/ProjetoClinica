@@ -209,6 +209,7 @@ public class ProntuarioDeEntradaEditar extends javax.swing.JFrame {
 
     private void jButtonEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarActionPerformed
         editar();
+        limparCampos();
     }//GEN-LAST:event_jButtonEditarActionPerformed
 
     private void jButtonPesquisaCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPesquisaCodigoActionPerformed

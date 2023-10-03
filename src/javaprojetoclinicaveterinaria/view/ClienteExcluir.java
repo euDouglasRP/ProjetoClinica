@@ -113,7 +113,7 @@ public class ClienteExcluir extends javax.swing.JFrame {
 
     private void jButtonExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExcluirActionPerformed
         excluirCliente();
-
+        limpaOsCampos();
     }//GEN-LAST:event_jButtonExcluirActionPerformed
 
     private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed

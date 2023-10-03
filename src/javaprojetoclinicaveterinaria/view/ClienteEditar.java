@@ -206,7 +206,7 @@ public class ClienteEditar extends javax.swing.JFrame {
 
     private void jButtonAlteraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlteraActionPerformed
         alteraCliente();
-        
+        limpaOsCampos();
     }//GEN-LAST:event_jButtonAlteraActionPerformed
     
     public void limpaOsCampos(){

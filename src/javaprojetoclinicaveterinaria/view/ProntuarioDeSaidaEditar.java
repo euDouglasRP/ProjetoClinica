@@ -1,4 +1,3 @@
-
 package javaprojetoclinicaveterinaria.view;
 
 import java.util.ArrayList;
@@ -13,12 +12,12 @@ import javax.swing.JOptionPane;
  */
 public class ProntuarioDeSaidaEditar extends javax.swing.JFrame {
 
-    
     public ProntuarioDeSaidaEditar() {
         initComponents();
     }
-ArrayList<ProntuarioDeSaida> listaProntuarioDeSaida;
-        @SuppressWarnings("unchecked")
+    ArrayList<ProntuarioDeSaida> listaProntuarioDeSaida;
+
+    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -150,23 +149,36 @@ ArrayList<ProntuarioDeSaida> listaProntuarioDeSaida;
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEditarActionPerformed
-        try {
-            ProntuarioDeSaidaController prtController = new ProntuarioDeSaidaController();
-            prtController.editarProntuarioDeSaida(Integer.parseInt(jTextFieldCodigoPrincipal.getText()), Integer.parseInt(jTextFieldIDProntuarioDeEntrada.getText()), jTextAreaDescricao.getText(), jTextData.getText());
-           
-        } catch (Exception e) {
-        }
+        editar();
+        limparCampos();
     }//GEN-LAST:event_jButtonEditarActionPerformed
 
     private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
+        limparCampos();
+    }//GEN-LAST:event_jButtonLimparActionPerformed
+
+    private void jButtonPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPesquisarActionPerformed
+        pesquisaCodigo();
+    }//GEN-LAST:event_jButtonPesquisarActionPerformed
+
+    public void editar() {
+        try {
+            ProntuarioDeSaidaController prtController = new ProntuarioDeSaidaController();
+            prtController.editarProntuarioDeSaida(Integer.parseInt(jTextFieldCodigoPrincipal.getText()), Integer.parseInt(jTextFieldIDProntuarioDeEntrada.getText()), jTextAreaDescricao.getText(), jTextData.getText());
+
+        } catch (Exception e) {
+        }
+    }
+
+    public void limparCampos() {
         jTextData.setText("");
         jTextFieldIDProntuarioDeEntrada.setText("");
         jTextAreaDescricao.setText("");
         jTextFieldCodigoPrincipal.setText("");
-    }//GEN-LAST:event_jButtonLimparActionPerformed
+    }
 
-    private void jButtonPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPesquisarActionPerformed
-       
+    public void pesquisaCodigo() {
+
         try {
             listaProntuarioDeSaida = null;
             listaProntuarioDeSaida = ProntuarioDeSaidaDao.getProntuarioDeSaida();
@@ -183,8 +195,8 @@ ArrayList<ProntuarioDeSaida> listaProntuarioDeSaida;
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
         }
-    
-    }//GEN-LAST:event_jButtonPesquisarActionPerformed
+
+    }
 
     /**
      * @param args the command line arguments

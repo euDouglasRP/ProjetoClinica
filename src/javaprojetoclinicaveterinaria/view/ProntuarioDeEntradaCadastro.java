@@ -182,6 +182,7 @@ public class ProntuarioDeEntradaCadastro extends javax.swing.JFrame {
 
     private void jButtonCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarActionPerformed
         cadastra();
+        limparCampos();
     }//GEN-LAST:event_jButtonCadastrarActionPerformed
 
     private void jButtonLimparCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparCamposActionPerformed
